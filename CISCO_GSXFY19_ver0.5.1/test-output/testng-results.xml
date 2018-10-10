@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="23" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="1064587" started-at="2018-07-27T10:09:36Z" finished-at="2018-07-27T10:27:21Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="1064587" started-at="2018-07-27T10:09:36Z" finished-at="2018-07-27T10:27:21Z">
+      <class name="com.cisco.gsx.testsuites.GSX">
+        <test-method status="PASS" signature="verifyActivityRecommendationstittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyActivityRecommendationstittle" duration-ms="47051" started-at="2018-07-27T15:39:36Z" data-provider="data-provider" finished-at="2018-07-27T15:40:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyActivityRecommendationstittle -->
+        <test-method status="PASS" signature="verifyBuildYourScheduletittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyBuildYourScheduletittle" duration-ms="40662" started-at="2018-07-27T15:40:23Z" data-provider="data-provider" finished-at="2018-07-27T15:41:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBuildYourScheduletittle -->
+        <test-method status="PASS" signature="verifyFAQandPolicies(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyFAQandPolicies" duration-ms="35896" started-at="2018-07-27T15:41:04Z" data-provider="data-provider" finished-at="2018-07-27T15:41:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@15cafec7]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFAQandPolicies -->
+        <test-method status="PASS" signature="verifyLearningCurriculumtittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyLearningCurriculumtittle" duration-ms="58438" started-at="2018-07-27T15:41:40Z" data-provider="data-provider" finished-at="2018-07-27T15:42:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@5b444398]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearningCurriculumtittle -->
+        <test-method status="PASS" signature="verifyMyActivitiestittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyMyActivitiestittle" duration-ms="46913" started-at="2018-07-27T15:42:38Z" data-provider="data-provider" finished-at="2018-07-27T15:43:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@cb191ca]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyActivitiestittle -->
+        <test-method status="PASS" signature="verifyMyGSXtittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyMyGSXtittle" duration-ms="37580" started-at="2018-07-27T15:43:25Z" data-provider="data-provider" finished-at="2018-07-27T15:44:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@42f48531]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyGSXtittle -->
+        <test-method status="PASS" signature="verifyMySurveystittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyMySurveystittle" duration-ms="49449" started-at="2018-07-27T15:44:03Z" data-provider="data-provider" finished-at="2018-07-27T15:44:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@a776e]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMySurveystittle -->
+        <test-method status="PASS" signature="verifySeetheFinalists(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifySeetheFinalists" duration-ms="36135" started-at="2018-07-27T15:44:52Z" data-provider="data-provider" finished-at="2018-07-27T15:45:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@792bbc74]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeetheFinalists -->
+        <test-method status="PASS" signature="verifySessionRecommendationstittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifySessionRecommendationstittle" duration-ms="52314" started-at="2018-07-27T15:45:29Z" data-provider="data-provider" finished-at="2018-07-27T15:46:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@79145d5a]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySessionRecommendationstittle -->
+        <test-method status="PASS" signature="verifyTheHubAfterHoursTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubAfterHoursTittle" duration-ms="33522" started-at="2018-07-27T15:46:21Z" data-provider="data-provider" finished-at="2018-07-27T15:46:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@1f2f9244]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubAfterHoursTittle -->
+        <test-method status="PASS" signature="verifyTheHubCiscoShowcaseTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubCiscoShowcaseTittle" duration-ms="38304" started-at="2018-07-27T15:46:54Z" data-provider="data-provider" finished-at="2018-07-27T15:47:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubCiscoShowcaseTittle -->
+        <test-method status="PASS" signature="verifyTheHubCultureTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubCultureTittle" duration-ms="38916" started-at="2018-07-27T15:47:33Z" data-provider="data-provider" finished-at="2018-07-27T15:48:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@6821ea29]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubCultureTittle -->
+        <test-method status="PASS" signature="verifyTheHubInnovateParkTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubInnovateParkTittle" duration-ms="32451" started-at="2018-07-27T15:48:12Z" data-provider="data-provider" finished-at="2018-07-27T15:48:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@338494fa]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubInnovateParkTittle -->
+        <test-method status="PASS" signature="verifyTheHubPartnerShowcaseTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubPartnerShowcaseTittle" duration-ms="32573" started-at="2018-07-27T15:48:44Z" data-provider="data-provider" finished-at="2018-07-27T15:49:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@505a9d7c]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubPartnerShowcaseTittle -->
+        <test-method status="PASS" signature="verifyTheHubSellerEnablementTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubSellerEnablementTittle" duration-ms="31664" started-at="2018-07-27T15:49:17Z" data-provider="data-provider" finished-at="2018-07-27T15:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@758c83d8]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubSellerEnablementTittle -->
+        <test-method status="PASS" signature="verifyTheHubTheWinRoomTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubTheWinRoomTittle" duration-ms="37796" started-at="2018-07-27T15:49:48Z" data-provider="data-provider" finished-at="2018-07-27T15:50:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@129b4fe2]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubTheWinRoomTittle -->
+        <test-method status="PASS" signature="verifyTheHubTittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyTheHubTittle" duration-ms="34635" started-at="2018-07-27T15:50:26Z" data-provider="data-provider" finished-at="2018-07-27T15:51:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@5af3a0f]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheHubTittle -->
+        <test-method status="PASS" signature="verifyViewtheweek(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifyViewtheweek" duration-ms="35857" started-at="2018-07-27T15:51:01Z" data-provider="data-provider" finished-at="2018-07-27T15:51:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@19ae6bb]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewtheweek -->
+        <test-method status="PASS" signature="verifymyCalendertittle(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifymyCalendertittle" duration-ms="47045" started-at="2018-07-27T15:51:37Z" data-provider="data-provider" finished-at="2018-07-27T15:52:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@10993713]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymyCalendertittle -->
+        <test-method status="PASS" signature="verifymyProfileEdit(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifymyProfileEdit" duration-ms="72725" started-at="2018-07-27T15:52:24Z" data-provider="data-provider" finished-at="2018-07-27T15:53:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@58359ebd]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymyProfileEdit -->
+        <test-method status="PASS" signature="verifymyProfileHotel(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifymyProfileHotel" duration-ms="67255" started-at="2018-07-27T15:53:36Z" data-provider="data-provider" finished-at="2018-07-27T15:54:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymyProfileHotel -->
+        <test-method status="PASS" signature="verifymyProfileQuestion(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifymyProfileQuestion" duration-ms="79165" started-at="2018-07-27T15:54:44Z" data-provider="data-provider" finished-at="2018-07-27T15:56:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@72cf2de5]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymyProfileQuestion -->
+        <test-method status="PASS" signature="verifymyProfileTravel(java.util.LinkedList)[pri:0, instance:com.cisco.gsx.testsuites.GSX@75828a0f]" name="verifymyProfileTravel" duration-ms="77668" started-at="2018-07-27T15:56:03Z" data-provider="data-provider" finished-at="2018-07-27T15:57:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymyProfileTravel -->
+      </class> <!-- com.cisco.gsx.testsuites.GSX -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

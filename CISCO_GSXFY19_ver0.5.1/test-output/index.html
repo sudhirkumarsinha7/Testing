@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyActivityRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1])">verifyActivityRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyBuildYourScheduletittle([com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3])">verifyBuildYourScheduletittle([com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyFAQandPolicies([com.cisco.gsx.excelreader.DataPojoClass@15cafec7])">verifyFAQandPolicies([com.cisco.gsx.excelreader.DataPojoClass@15cafec7])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyLearningCurriculumtittle([com.cisco.gsx.excelreader.DataPojoClass@5b444398])">verifyLearningCurriculumtittle([com.cisco.gsx.excelreader.DataPojoClass@5b444398])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyMyActivitiestittle([com.cisco.gsx.excelreader.DataPojoClass@cb191ca])">verifyMyActivitiestittle([com.cisco.gsx.excelreader.DataPojoClass@cb191ca])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyMyGSXtittle([com.cisco.gsx.excelreader.DataPojoClass@42f48531])">verifyMyGSXtittle([com.cisco.gsx.excelreader.DataPojoClass@42f48531])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyMySurveystittle([com.cisco.gsx.excelreader.DataPojoClass@a776e])">verifyMySurveystittle([com.cisco.gsx.excelreader.DataPojoClass@a776e])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifySeetheFinalists([com.cisco.gsx.excelreader.DataPojoClass@792bbc74])">verifySeetheFinalists([com.cisco.gsx.excelreader.DataPojoClass@792bbc74])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifySessionRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@79145d5a])">verifySessionRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@79145d5a])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubAfterHoursTittle([com.cisco.gsx.excelreader.DataPojoClass@1f2f9244])">verifyTheHubAfterHoursTittle([com.cisco.gsx.excelreader.DataPojoClass@1f2f9244])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubCiscoShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8])">verifyTheHubCiscoShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubCultureTittle([com.cisco.gsx.excelreader.DataPojoClass@6821ea29])">verifyTheHubCultureTittle([com.cisco.gsx.excelreader.DataPojoClass@6821ea29])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubInnovateParkTittle([com.cisco.gsx.excelreader.DataPojoClass@338494fa])">verifyTheHubInnovateParkTittle([com.cisco.gsx.excelreader.DataPojoClass@338494fa])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubPartnerShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@505a9d7c])">verifyTheHubPartnerShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@505a9d7c])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubSellerEnablementTittle([com.cisco.gsx.excelreader.DataPojoClass@758c83d8])">verifyTheHubSellerEnablementTittle([com.cisco.gsx.excelreader.DataPojoClass@758c83d8])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubTheWinRoomTittle([com.cisco.gsx.excelreader.DataPojoClass@129b4fe2])">verifyTheHubTheWinRoomTittle([com.cisco.gsx.excelreader.DataPojoClass@129b4fe2])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyTheHubTittle([com.cisco.gsx.excelreader.DataPojoClass@5af3a0f])">verifyTheHubTittle([com.cisco.gsx.excelreader.DataPojoClass@5af3a0f])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifyViewtheweek([com.cisco.gsx.excelreader.DataPojoClass@19ae6bb])">verifyViewtheweek([com.cisco.gsx.excelreader.DataPojoClass@19ae6bb])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifymyCalendertittle([com.cisco.gsx.excelreader.DataPojoClass@10993713])">verifymyCalendertittle([com.cisco.gsx.excelreader.DataPojoClass@10993713])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifymyProfileEdit([com.cisco.gsx.excelreader.DataPojoClass@58359ebd])">verifymyProfileEdit([com.cisco.gsx.excelreader.DataPojoClass@58359ebd])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifymyProfileHotel([com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6])">verifymyProfileHotel([com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifymyProfileQuestion([com.cisco.gsx.excelreader.DataPojoClass@72cf2de5])">verifymyProfileQuestion([com.cisco.gsx.excelreader.DataPojoClass@72cf2de5])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.cisco.gsx.testsuites.GSX" hash-for-method="verifymyProfileTravel([com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00])">verifymyProfileTravel([com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cisco.gsx.testsuites.GSX</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyActivityRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1])">
+                  </a> <!-- verifyActivityRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1]) -->
+                  <span class="method-name">verifyActivityRecommendationstittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBuildYourScheduletittle([com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3])">
+                  </a> <!-- verifyBuildYourScheduletittle([com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3]) -->
+                  <span class="method-name">verifyBuildYourScheduletittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFAQandPolicies([com.cisco.gsx.excelreader.DataPojoClass@15cafec7])">
+                  </a> <!-- verifyFAQandPolicies([com.cisco.gsx.excelreader.DataPojoClass@15cafec7]) -->
+                  <span class="method-name">verifyFAQandPolicies</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@15cafec7])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLearningCurriculumtittle([com.cisco.gsx.excelreader.DataPojoClass@5b444398])">
+                  </a> <!-- verifyLearningCurriculumtittle([com.cisco.gsx.excelreader.DataPojoClass@5b444398]) -->
+                  <span class="method-name">verifyLearningCurriculumtittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@5b444398])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyActivitiestittle([com.cisco.gsx.excelreader.DataPojoClass@cb191ca])">
+                  </a> <!-- verifyMyActivitiestittle([com.cisco.gsx.excelreader.DataPojoClass@cb191ca]) -->
+                  <span class="method-name">verifyMyActivitiestittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@cb191ca])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyGSXtittle([com.cisco.gsx.excelreader.DataPojoClass@42f48531])">
+                  </a> <!-- verifyMyGSXtittle([com.cisco.gsx.excelreader.DataPojoClass@42f48531]) -->
+                  <span class="method-name">verifyMyGSXtittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@42f48531])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMySurveystittle([com.cisco.gsx.excelreader.DataPojoClass@a776e])">
+                  </a> <!-- verifyMySurveystittle([com.cisco.gsx.excelreader.DataPojoClass@a776e]) -->
+                  <span class="method-name">verifyMySurveystittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@a776e])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySeetheFinalists([com.cisco.gsx.excelreader.DataPojoClass@792bbc74])">
+                  </a> <!-- verifySeetheFinalists([com.cisco.gsx.excelreader.DataPojoClass@792bbc74]) -->
+                  <span class="method-name">verifySeetheFinalists</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@792bbc74])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySessionRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@79145d5a])">
+                  </a> <!-- verifySessionRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@79145d5a]) -->
+                  <span class="method-name">verifySessionRecommendationstittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@79145d5a])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubAfterHoursTittle([com.cisco.gsx.excelreader.DataPojoClass@1f2f9244])">
+                  </a> <!-- verifyTheHubAfterHoursTittle([com.cisco.gsx.excelreader.DataPojoClass@1f2f9244]) -->
+                  <span class="method-name">verifyTheHubAfterHoursTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@1f2f9244])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubCiscoShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8])">
+                  </a> <!-- verifyTheHubCiscoShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8]) -->
+                  <span class="method-name">verifyTheHubCiscoShowcaseTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubCultureTittle([com.cisco.gsx.excelreader.DataPojoClass@6821ea29])">
+                  </a> <!-- verifyTheHubCultureTittle([com.cisco.gsx.excelreader.DataPojoClass@6821ea29]) -->
+                  <span class="method-name">verifyTheHubCultureTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@6821ea29])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubInnovateParkTittle([com.cisco.gsx.excelreader.DataPojoClass@338494fa])">
+                  </a> <!-- verifyTheHubInnovateParkTittle([com.cisco.gsx.excelreader.DataPojoClass@338494fa]) -->
+                  <span class="method-name">verifyTheHubInnovateParkTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@338494fa])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubPartnerShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@505a9d7c])">
+                  </a> <!-- verifyTheHubPartnerShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@505a9d7c]) -->
+                  <span class="method-name">verifyTheHubPartnerShowcaseTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@505a9d7c])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubSellerEnablementTittle([com.cisco.gsx.excelreader.DataPojoClass@758c83d8])">
+                  </a> <!-- verifyTheHubSellerEnablementTittle([com.cisco.gsx.excelreader.DataPojoClass@758c83d8]) -->
+                  <span class="method-name">verifyTheHubSellerEnablementTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@758c83d8])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubTheWinRoomTittle([com.cisco.gsx.excelreader.DataPojoClass@129b4fe2])">
+                  </a> <!-- verifyTheHubTheWinRoomTittle([com.cisco.gsx.excelreader.DataPojoClass@129b4fe2]) -->
+                  <span class="method-name">verifyTheHubTheWinRoomTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@129b4fe2])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheHubTittle([com.cisco.gsx.excelreader.DataPojoClass@5af3a0f])">
+                  </a> <!-- verifyTheHubTittle([com.cisco.gsx.excelreader.DataPojoClass@5af3a0f]) -->
+                  <span class="method-name">verifyTheHubTittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@5af3a0f])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewtheweek([com.cisco.gsx.excelreader.DataPojoClass@19ae6bb])">
+                  </a> <!-- verifyViewtheweek([com.cisco.gsx.excelreader.DataPojoClass@19ae6bb]) -->
+                  <span class="method-name">verifyViewtheweek</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@19ae6bb])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymyCalendertittle([com.cisco.gsx.excelreader.DataPojoClass@10993713])">
+                  </a> <!-- verifymyCalendertittle([com.cisco.gsx.excelreader.DataPojoClass@10993713]) -->
+                  <span class="method-name">verifymyCalendertittle</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@10993713])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymyProfileEdit([com.cisco.gsx.excelreader.DataPojoClass@58359ebd])">
+                  </a> <!-- verifymyProfileEdit([com.cisco.gsx.excelreader.DataPojoClass@58359ebd]) -->
+                  <span class="method-name">verifymyProfileEdit</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@58359ebd])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymyProfileHotel([com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6])">
+                  </a> <!-- verifymyProfileHotel([com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6]) -->
+                  <span class="method-name">verifymyProfileHotel</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymyProfileQuestion([com.cisco.gsx.excelreader.DataPojoClass@72cf2de5])">
+                  </a> <!-- verifymyProfileQuestion([com.cisco.gsx.excelreader.DataPojoClass@72cf2de5]) -->
+                  <span class="method-name">verifymyProfileQuestion</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@72cf2de5])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifymyProfileTravel([com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00])">
+                  </a> <!-- verifymyProfileTravel([com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00]) -->
+                  <span class="method-name">verifymyProfileTravel</span>
+                  <span class="parameters">([com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cisco.gsx.testsuites.GSX&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifymyProfileQuestion')
+data.setCell(0, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(0, 3, 79165);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifymyProfileTravel')
+data.setCell(1, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(1, 3, 77668);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifymyProfileEdit')
+data.setCell(2, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(2, 3, 72725);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifymyProfileHotel')
+data.setCell(3, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(3, 3, 67255);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLearningCurriculumtittle')
+data.setCell(4, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(4, 3, 58438);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifySessionRecommendationstittle')
+data.setCell(5, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(5, 3, 52314);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyMySurveystittle')
+data.setCell(6, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(6, 3, 49449);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyActivityRecommendationstittle')
+data.setCell(7, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(7, 3, 47051);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifymyCalendertittle')
+data.setCell(8, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(8, 3, 47045);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyMyActivitiestittle')
+data.setCell(9, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(9, 3, 46913);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyBuildYourScheduletittle')
+data.setCell(10, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(10, 3, 40662);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyTheHubCultureTittle')
+data.setCell(11, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(11, 3, 38916);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyTheHubCiscoShowcaseTittle')
+data.setCell(12, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(12, 3, 38304);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyTheHubTheWinRoomTittle')
+data.setCell(13, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(13, 3, 37796);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyMyGSXtittle')
+data.setCell(14, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(14, 3, 37580);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifySeetheFinalists')
+data.setCell(15, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(15, 3, 36135);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyFAQandPolicies')
+data.setCell(16, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(16, 3, 35896);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyViewtheweek')
+data.setCell(17, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(17, 3, 35857);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyTheHubTittle')
+data.setCell(18, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(18, 3, 34635);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyTheHubAfterHoursTittle')
+data.setCell(19, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(19, 3, 33522);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyTheHubPartnerShowcaseTittle')
+data.setCell(20, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(20, 3, 32573);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyTheHubInnovateParkTittle')
+data.setCell(21, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(21, 3, 32451);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyTheHubSellerEnablementTittle')
+data.setCell(22, 2, 'com.cisco.gsx.testsuites.GSX')
+data.setCell(22, 3, 31664);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cisco.gsx.testsuites.GSX</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyActivityRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1])</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBuildYourScheduletittle([com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3])</span>
+                <span class="method-start">47078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFAQandPolicies([com.cisco.gsx.excelreader.DataPojoClass@15cafec7])</span>
+                <span class="method-start">87760 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLearningCurriculumtittle([com.cisco.gsx.excelreader.DataPojoClass@5b444398])</span>
+                <span class="method-start">123697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMyActivitiestittle([com.cisco.gsx.excelreader.DataPojoClass@cb191ca])</span>
+                <span class="method-start">182145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMyGSXtittle([com.cisco.gsx.excelreader.DataPojoClass@42f48531])</span>
+                <span class="method-start">229068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMySurveystittle([com.cisco.gsx.excelreader.DataPojoClass@a776e])</span>
+                <span class="method-start">266648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySeetheFinalists([com.cisco.gsx.excelreader.DataPojoClass@792bbc74])</span>
+                <span class="method-start">316107 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySessionRecommendationstittle([com.cisco.gsx.excelreader.DataPojoClass@79145d5a])</span>
+                <span class="method-start">352255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubAfterHoursTittle([com.cisco.gsx.excelreader.DataPojoClass@1f2f9244])</span>
+                <span class="method-start">404569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubCiscoShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8])</span>
+                <span class="method-start">438111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubCultureTittle([com.cisco.gsx.excelreader.DataPojoClass@6821ea29])</span>
+                <span class="method-start">476425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubInnovateParkTittle([com.cisco.gsx.excelreader.DataPojoClass@338494fa])</span>
+                <span class="method-start">515351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubPartnerShowcaseTittle([com.cisco.gsx.excelreader.DataPojoClass@505a9d7c])</span>
+                <span class="method-start">547812 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubSellerEnablementTittle([com.cisco.gsx.excelreader.DataPojoClass@758c83d8])</span>
+                <span class="method-start">580395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubTheWinRoomTittle([com.cisco.gsx.excelreader.DataPojoClass@129b4fe2])</span>
+                <span class="method-start">612079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTheHubTittle([com.cisco.gsx.excelreader.DataPojoClass@5af3a0f])</span>
+                <span class="method-start">649875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyViewtheweek([com.cisco.gsx.excelreader.DataPojoClass@19ae6bb])</span>
+                <span class="method-start">684520 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymyCalendertittle([com.cisco.gsx.excelreader.DataPojoClass@10993713])</span>
+                <span class="method-start">720387 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymyProfileEdit([com.cisco.gsx.excelreader.DataPojoClass@58359ebd])</span>
+                <span class="method-start">767442 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymyProfileHotel([com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6])</span>
+                <span class="method-start">840177 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymyProfileQuestion([com.cisco.gsx.excelreader.DataPojoClass@72cf2de5])</span>
+                <span class="method-start">907442 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifymyProfileTravel([com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00])</span>
+                <span class="method-start">986607 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

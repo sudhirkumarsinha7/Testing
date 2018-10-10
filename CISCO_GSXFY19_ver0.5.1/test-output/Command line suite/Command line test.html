@@ -1,0 +1,521 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 27 19:14:41 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>8698 seconds (8698883 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyPillarSessions()'><b>verifyPillarSessions</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@53cdecf6]</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.pageObjects.GSX_Filters.validatePillar(GSX_Filters.java:772)
+	at com.cisco.gsx.pageObjects.GSX_Filters.verifyPillarSessions(GSX_Filters.java:525)
+	at com.cisco.gsx.testsuites.GSX.verifyPillarSessions(GSX.java:387)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977160959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977160959'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.pageObjects.GSX_Filters.validatePillar(GSX_Filters.java:772)
+	at com.cisco.gsx.pageObjects.GSX_Filters.verifyPillarSessions(GSX_Filters.java:525)
+	at com.cisco.gsx.testsuites.GSX.verifyPillarSessions(GSX.java:387)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+</pre></div></td>
+<td>2081</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifySessionVenueDetails()'><b>verifySessionVenueDetails</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@62b3df3a]</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.utilities.CommonUtil.findElement(CommonUtil.java:605)
+	at com.cisco.gsx.utilities.CommonUtil.getText(CommonUtil.java:505)
+	at com.cisco.gsx.pageObjects.Sessions.VenueDetails(Sessions.java:379)
+	at com.cisco.gsx.pageObjects.Sessions.sessionsvenuedetails(Sessions.java:351)
+	at com.cisco.gsx.testsuites.GSX.verifySessionVenueDetails(GSX.java:406)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96039159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace96039159'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.utilities.CommonUtil.findElement(CommonUtil.java:605)
+	at com.cisco.gsx.utilities.CommonUtil.getText(CommonUtil.java:505)
+	at com.cisco.gsx.pageObjects.Sessions.VenueDetails(Sessions.java:379)
+	at com.cisco.gsx.pageObjects.Sessions.sessionsvenuedetails(Sessions.java:351)
+	at com.cisco.gsx.testsuites.GSX.verifySessionVenueDetails(GSX.java:406)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+</pre></div></td>
+<td>2055</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifySessiosInCategoryFilters()'><b>verifySessiosInCategoryFilters</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@7e11ab3d]</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.pageObjects.GSX_Filters.filtersCount(GSX_Filters.java:370)
+	at com.cisco.gsx.pageObjects.GSX_Filters.setCategoryFilters(GSX_Filters.java:792)
+	at com.cisco.gsx.testsuites.GSX.verifySessiosInCategoryFilters(GSX.java:347)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1650955365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1650955365'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.pageObjects.GSX_Filters.filtersCount(GSX_Filters.java:370)
+	at com.cisco.gsx.pageObjects.GSX_Filters.setCategoryFilters(GSX_Filters.java:792)
+	at com.cisco.gsx.testsuites.GSX.verifySessiosInCategoryFilters(GSX.java:347)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+</pre></div></td>
+<td>37</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifySuperSessionConflict()'><b>verifySuperSessionConflict</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@2392212b]</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.utilities.CommonUtil.findElement(CommonUtil.java:605)
+	at com.cisco.gsx.utilities.CommonUtil.isElmentPrsent(CommonUtil.java:171)
+	at com.cisco.gsx.pageObjects.Conflicts.supersession(Conflicts.java:219)
+	at com.cisco.gsx.testsuites.GSX.verifySuperSessionConflict(GSX.java:1780)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1629454900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1629454900'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.utilities.CommonUtil.findElement(CommonUtil.java:605)
+	at com.cisco.gsx.utilities.CommonUtil.isElmentPrsent(CommonUtil.java:171)
+	at com.cisco.gsx.pageObjects.Conflicts.supersession(Conflicts.java:219)
+	at com.cisco.gsx.testsuites.GSX.verifySuperSessionConflict(GSX.java:1780)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+</pre></div></td>
+<td>2055</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyTypeFilterstypes()'><b>verifyTypeFilterstypes</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@28f8e165]</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at com.cisco.gsx.utilities.CommonUtil.getErroMsg(CommonUtil.java:689)
+	at com.cisco.gsx.utilities.CommonUtil.getText(CommonUtil.java:513)
+	at com.cisco.gsx.pageObjects.GSX_Filters.SessionTypeFilters(GSX_Filters.java:306)
+	at com.cisco.gsx.testsuites.GSX.verifyTypeFilterstypes(GSX.java:334)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace669725336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace669725336'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(Unknown Source)
+	at com.cisco.gsx.utilities.CommonUtil.getErroMsg(CommonUtil.java:689)
+	at com.cisco.gsx.utilities.CommonUtil.getText(CommonUtil.java:513)
+	at com.cisco.gsx.pageObjects.GSX_Filters.SessionTypeFilters(GSX_Filters.java:306)
+	at com.cisco.gsx.testsuites.GSX.verifyTypeFilterstypes(GSX.java:334)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+</pre></div></td>
+<td>919</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifysessionsaddtomyagenda()'><b>verifysessionsaddtomyagenda</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@66f66866]</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.utilities.CommonUtil.click(CommonUtil.java:403)
+	at com.cisco.gsx.pageObjects.Sessions.sessionsaddtomyagenda(Sessions.java:167)
+	at com.cisco.gsx.testsuites.GSX.verifysessionsaddtomyagenda(GSX.java:474)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1240412896", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1240412896'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.cisco.gsx.utilities.CommonUtil.logMessage(CommonUtil.java:702)
+	at com.cisco.gsx.utilities.CommonUtil.click(CommonUtil.java:403)
+	at com.cisco.gsx.pageObjects.Sessions.sessionsaddtomyagenda(Sessions.java:167)
+	at com.cisco.gsx.testsuites.GSX.verifysessionsaddtomyagenda(GSX.java:474)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.cisco.gsx.util.IdeabytesTestRunner.runGSXTestCases(IdeabytesTestRunner.java:296)
+	at com.cisco.gsx.main.TestSuiteRunner.main(TestSuiteRunner.java:12)
+</pre></div></td>
+<td>64</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.validateSearchWithInvaliddata()'><b>validateSearchWithInvaliddata</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@4d666b41]</td>
+<td></td>
+<td>43</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.validatesearchpage()'><b>validatesearchpage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@6594402a]</td>
+<td></td>
+<td>36</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyAmericaGSPSession()'><b>verifyAmericaGSPSession</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@30f4b1a6]</td>
+<td></td>
+<td>35</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyAmericaSession()'><b>verifyAmericaSession</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@405325cf, com.cisco.gsx.excelreader.DataPojoClass@3e1162e7]</td>
+<td></td>
+<td>67</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyAustraliaSession()'><b>verifyAustraliaSession</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@79c3f01f]</td>
+<td></td>
+<td>27</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyBreakSessionConflict()'><b>verifyBreakSessionConflict</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@6c2f1700]</td>
+<td></td>
+<td>62</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyCategoryFiltertypes()'><b>verifyCategoryFiltertypes</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@350b3a17]</td>
+<td></td>
+<td>31</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyCheckinPage()'><b>verifyCheckinPage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@38600b]</td>
+<td></td>
+<td>36</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyChinaSession()'><b>verifyChinaSession</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@669d2b1b]</td>
+<td></td>
+<td>27</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyEMEARSession()'><b>verifyEMEARSession</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@721eb7df]</td>
+<td></td>
+<td>34</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyFAQpage()'><b>verifyFAQpage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@1ea9f009]</td>
+<td></td>
+<td>38</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyFaqPage()'><b>verifyFaqPage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@5d52e3ef]</td>
+<td></td>
+<td>36</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyFilterCategorytypes()'><b>verifyFilterCategorytypes</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@5298dead]</td>
+<td></td>
+<td>37</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyGSXForGood()'><b>verifyGSXForGood</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@553f3b6e]</td>
+<td></td>
+<td>31</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyGeneralsession()'><b>verifyGeneralsession</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@4c7a078]</td>
+<td></td>
+<td>32</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyGettingAroundPage()'><b>verifyGettingAroundPage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@4e406694]</td>
+<td></td>
+<td>37</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyGlobalCelebrations()'><b>verifyGlobalCelebrations</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@5ab9b447]</td>
+<td></td>
+<td>32</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyMealsSessions()'><b>verifyMealsSessions</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@76f10035]</td>
+<td></td>
+<td>29</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyMySchedulerpageplus()'><b>verifyMySchedulerpageplus</b><br>Test class: com.cisco.gsx.testsuites.GSX</td>
+<td></td>
+<td>44</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyPillarFiltertypes()'><b>verifyPillarFiltertypes</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@4f8caaf3]</td>
+<td></td>
+<td>33</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyRegionalConflict()'><b>verifyRegionalConflict</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@2b50150]</td>
+<td></td>
+<td>71</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifySearchTextInTabs()'><b>verifySearchTextInTabs</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@15b986cd]</td>
+<td></td>
+<td>106</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifySessionDetailsLayout()'><b>verifySessionDetailsLayout</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@6bb7cce7]</td>
+<td></td>
+<td>44</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifySocialPage()'><b>verifySocialPage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@41c62850]</td>
+<td></td>
+<td>47</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyTrackFilterSessions()'><b>verifyTrackFilterSessions</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@6b530eb9]</td>
+<td></td>
+<td>73</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyTrackFiltertypes()'><b>verifyTrackFiltertypes</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@328572f0]</td>
+<td></td>
+<td>39</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyTypeFilterSessions()'><b>verifyTypeFilterSessions</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@678040b3]</td>
+<td></td>
+<td>105</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyWellness()'><b>verifyWellness</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@17f460bb]</td>
+<td></td>
+<td>41</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyattendeespage()'><b>verifyattendeespage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@64a1923a]</td>
+<td></td>
+<td>40</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifyrequiredSession()'><b>verifyrequiredSession</b><br>Test class: com.cisco.gsx.testsuites.GSX</td>
+<td></td>
+<td>46</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifysessionsspeakerdetailspage()'><b>verifysessionsspeakerdetailspage</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@7d2a6eac]</td>
+<td></td>
+<td>58</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+<tr>
+<td title='com.cisco.gsx.testsuites.GSX.verifysessionsspeakerorder()'><b>verifysessionsspeakerorder</b><br>Test class: com.cisco.gsx.testsuites.GSX<br>Parameters: [com.cisco.gsx.excelreader.DataPojoClass@18ca3c62]</td>
+<td></td>
+<td>52</td>
+<td>com.cisco.gsx.testsuites.GSX@75828a0f</td></tr>
+</table><p>
+</body>
+</html>

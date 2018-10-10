@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">23</td><td class="numi">23</td><td class="numi">0</td><td class="numi">0</td><td class="numi">1,064.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="23">com.cisco.gsx.testsuites.GSX</td><td><a href="#m1"><b>verifyActivityRecommendationstittle</b>  </a></td><td class="numi">1</td><td>1532686176811</td><td class="numi">47051</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifyBuildYourScheduletittle</b>  </a></td><td class="numi">1</td><td>1532686223889</td><td class="numi">40662</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyFAQandPolicies</b>  </a></td><td class="numi">1</td><td>1532686264571</td><td class="numi">35896</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyLearningCurriculumtittle</b>  </a></td><td class="numi">1</td><td>1532686300508</td><td class="numi">58438</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyMyActivitiestittle</b>  </a></td><td class="numi">1</td><td>1532686358956</td><td class="numi">46913</td></tr><tr class="passedodd"><td><a href="#m6"><b>verifyMyGSXtittle</b>  </a></td><td class="numi">1</td><td>1532686405879</td><td class="numi">37580</td></tr><tr class="passedodd"><td><a href="#m7"><b>verifyMySurveystittle</b>  </a></td><td class="numi">1</td><td>1532686443459</td><td class="numi">49449</td></tr><tr class="passedodd"><td><a href="#m8"><b>verifySeetheFinalists</b>  </a></td><td class="numi">1</td><td>1532686492918</td><td class="numi">36135</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifySessionRecommendationstittle</b>  </a></td><td class="numi">1</td><td>1532686529066</td><td class="numi">52314</td></tr><tr class="passedodd"><td><a href="#m10"><b>verifyTheHubAfterHoursTittle</b>  </a></td><td class="numi">1</td><td>1532686581380</td><td class="numi">33522</td></tr><tr class="passedodd"><td><a href="#m11"><b>verifyTheHubCiscoShowcaseTittle</b>  </a></td><td class="numi">1</td><td>1532686614922</td><td class="numi">38304</td></tr><tr class="passedodd"><td><a href="#m12"><b>verifyTheHubCultureTittle</b>  </a></td><td class="numi">1</td><td>1532686653236</td><td class="numi">38916</td></tr><tr class="passedodd"><td><a href="#m13"><b>verifyTheHubInnovateParkTittle</b>  </a></td><td class="numi">1</td><td>1532686692162</td><td class="numi">32451</td></tr><tr class="passedodd"><td><a href="#m14"><b>verifyTheHubPartnerShowcaseTittle</b>  </a></td><td class="numi">1</td><td>1532686724623</td><td class="numi">32573</td></tr><tr class="passedodd"><td><a href="#m15"><b>verifyTheHubSellerEnablementTittle</b>  </a></td><td class="numi">1</td><td>1532686757206</td><td class="numi">31664</td></tr><tr class="passedodd"><td><a href="#m16"><b>verifyTheHubTheWinRoomTittle</b>  </a></td><td class="numi">1</td><td>1532686788890</td><td class="numi">37796</td></tr><tr class="passedodd"><td><a href="#m17"><b>verifyTheHubTittle</b>  </a></td><td class="numi">1</td><td>1532686826686</td><td class="numi">34635</td></tr><tr class="passedodd"><td><a href="#m18"><b>verifyViewtheweek</b>  </a></td><td class="numi">1</td><td>1532686861331</td><td class="numi">35857</td></tr><tr class="passedodd"><td><a href="#m19"><b>verifymyCalendertittle</b>  </a></td><td class="numi">1</td><td>1532686897198</td><td class="numi">47045</td></tr><tr class="passedodd"><td><a href="#m20"><b>verifymyProfileEdit</b>  </a></td><td class="numi">1</td><td>1532686944253</td><td class="numi">72725</td></tr><tr class="passedodd"><td><a href="#m21"><b>verifymyProfileHotel</b>  </a></td><td class="numi">1</td><td>1532687016988</td><td class="numi">67255</td></tr><tr class="passedodd"><td><a href="#m22"><b>verifymyProfileQuestion</b>  </a></td><td class="numi">1</td><td>1532687084253</td><td class="numi">79165</td></tr><tr class="passedodd"><td><a href="#m23"><b>verifymyProfileTravel</b>  </a></td><td class="numi">1</td><td>1532687163418</td><td class="numi">77668</td></tr>
+</table>
+<h1>Command line test</h1>
+<h2 id="m1">com.cisco.gsx.testsuites.GSX:verifyBuildYourScheduletittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@2a3c96e3]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.cisco.gsx.testsuites.GSX:verifyActivityRecommendationstittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@30bcf3c1]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.cisco.gsx.testsuites.GSX:verifyTheHubSellerEnablementTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@758c83d8]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.cisco.gsx.testsuites.GSX:verifyTheHubCiscoShowcaseTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@4c4d27c8]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.cisco.gsx.testsuites.GSX:verifyMyActivitiestittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@cb191ca]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.cisco.gsx.testsuites.GSX:verifymyProfileHotel</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@24b6b8f6]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.cisco.gsx.testsuites.GSX:verifySessionRecommendationstittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@79145d5a]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.cisco.gsx.testsuites.GSX:verifymyProfileEdit</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@58359ebd]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.cisco.gsx.testsuites.GSX:verifymyProfileQuestion</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@72cf2de5]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.cisco.gsx.testsuites.GSX:verifymyProfileTravel</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@2bb7bd00]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.cisco.gsx.testsuites.GSX:verifyLearningCurriculumtittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@5b444398]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.cisco.gsx.testsuites.GSX:verifyTheHubAfterHoursTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@1f2f9244]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.cisco.gsx.testsuites.GSX:verifyTheHubTheWinRoomTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@129b4fe2]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.cisco.gsx.testsuites.GSX:verifyMySurveystittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@a776e]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.cisco.gsx.testsuites.GSX:verifyTheHubTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@5af3a0f]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.cisco.gsx.testsuites.GSX:verifymyCalendertittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@10993713]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.cisco.gsx.testsuites.GSX:verifyTheHubCultureTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@6821ea29]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.cisco.gsx.testsuites.GSX:verifyTheHubInnovateParkTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@338494fa]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.cisco.gsx.testsuites.GSX:verifyFAQandPolicies</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@15cafec7]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.cisco.gsx.testsuites.GSX:verifyViewtheweek</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@19ae6bb]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.cisco.gsx.testsuites.GSX:verifyTheHubPartnerShowcaseTittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@505a9d7c]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.cisco.gsx.testsuites.GSX:verifySeetheFinalists</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@792bbc74]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.cisco.gsx.testsuites.GSX:verifyMyGSXtittle</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[com.cisco.gsx.excelreader.DataPojoClass@42f48531]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
